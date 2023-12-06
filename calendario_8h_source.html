@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>progetto_feola:  File sorgente calendario.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">progetto_feola
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('calendario_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Caricamento in corso...</div>
+<div class="SRStatus" id="Searching">Ricerca in corso...</div>
+<div class="SRStatus" id="NoMatches">Nessun risultato</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">calendario.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="calendario_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="prenotazione_8h.html">prenotazione.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_calendario.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="class_calendario.html">Calendario</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_class" href="class_prenotazione.html">Prenotazione</a>* prenotazioni; </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">int</span> numPrenotazioni; </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="comment">//COSTRUTTORI E DISTRUTTORI</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="class_calendario.html#a2aa60aa6d3c27f696018cc09d2748ea5">Calendario</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_function" href="class_calendario.html#a0fa99e5d205c8f91a0ea8cfe47568c21">~Calendario</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">//OPERAZIONI ALLE PRENOTAZIONI</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_calendario.html#ae4f5278c417c7c74e6fb80676620a77a">nuovaPrenotazione</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_cliente.html">Cliente</a>&amp; c1, <a class="code hl_enumeration" href="configurazione_8h.html#adc0591c2c6aa3aa864336ece4978ab62">Camera</a> room, <span class="keyword">const</span> <a class="code hl_struct" href="struct_data.html">Data</a>&amp; d1, <span class="keyword">const</span> <a class="code hl_struct" href="struct_data.html">Data</a>&amp; d2, <span class="keywordtype">int</span> ospiti);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_calendario.html#a8803bbbf6559eaa6b242bf744146ae0e">setPrenotazione</a>(<span class="keyword">const</span> <span class="keywordtype">long</span>&amp; id1);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_calendario.html#a3684b956b7e8b8e8b25cdcc1c9664129">cancellaPrenotazione</a>(<span class="keyword">const</span> <span class="keywordtype">long</span>&amp; id1);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_calendario.html#aa6cb8e23bc4e8ffc4c83c516b1056826">aggiornaCalendario</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_data.html">Data</a>&amp; giorno);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_calendario.html#a79b9444eece40dd2eec121590e12b92e">cercaPrenotazione</a>(<span class="keyword">const</span> <span class="keywordtype">long</span>&amp; id1);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_calendario.html#ae18ac4014321c77c80faf006b325af7f">showCalendario</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_calendario.html#ae1d295d116bed29cf3a9eb8e5b8e2a52">showGiorno</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_data.html">Data</a>&amp; giorno) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">//ORDINAMENTO</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_calendario.html#ab5019aafc2dd7bbc6b83425362865c61">ordinaCalendario</a>(<span class="keywordtype">bool</span> (*ord)(<a class="code hl_class" href="class_prenotazione.html">Prenotazione</a> p1, <a class="code hl_class" href="class_prenotazione.html">Prenotazione</a> p2));</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="comment">//INPUT E OUTPUT</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_calendario.html#a73c1899fe4020cec7b7a43d97635d406">inputTastiera</a>(<span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_calendario.html#aa7b2ba66de7c54f14f56efc559f77a4a">inputFile</a>(ifstream &amp;fin);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_calendario.html#a6b3b4f25d99d0f3e62e4e203a4ceee90">outputFile</a>(ofstream &amp;fout);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_calendario.html#a256b2a4ea8b87337bfa440eb4ce9f781">full</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_calendario.html#aaa7feb31c1e6a0377e4c06a373dd0004">dataLibera</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="configurazione_8h.html#adc0591c2c6aa3aa864336ece4978ab62">Camera</a> room, <span class="keyword">const</span> <a class="code hl_struct" href="struct_data.html">Data</a>&amp; d1, <span class="keyword">const</span> <a class="code hl_struct" href="struct_data.html">Data</a>&amp; d2);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_calendario.html#aa1de8b4fdc10da4cc4b8d225873160ba">elim</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_calendario.html#a7506173ab867ad17383559c3301a95f2">swap</a>(<a class="code hl_class" href="class_prenotazione.html">Prenotazione</a>&amp; p1, <a class="code hl_class" href="class_prenotazione.html">Prenotazione</a>&amp; p2);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
+</div>
+<div class="ttc" id="aclass_calendario_html"><div class="ttname"><a href="class_calendario.html">Calendario</a></div><div class="ttdoc">Rappresenta un'entità generica di un calendario.</div><div class="ttdef"><b>Definition</b> calendario.h:23</div></div>
+<div class="ttc" id="aclass_calendario_html_a0fa99e5d205c8f91a0ea8cfe47568c21"><div class="ttname"><a href="class_calendario.html#a0fa99e5d205c8f91a0ea8cfe47568c21">Calendario::~Calendario</a></div><div class="ttdeci">~Calendario()</div><div class="ttdoc">Distruttore.</div><div class="ttdef"><b>Definition</b> calendario.cpp:28</div></div>
+<div class="ttc" id="aclass_calendario_html_a256b2a4ea8b87337bfa440eb4ce9f781"><div class="ttname"><a href="class_calendario.html#a256b2a4ea8b87337bfa440eb4ce9f781">Calendario::full</a></div><div class="ttdeci">bool full() const</div><div class="ttdef"><b>Definition</b> calendario.cpp:309</div></div>
+<div class="ttc" id="aclass_calendario_html_a2aa60aa6d3c27f696018cc09d2748ea5"><div class="ttname"><a href="class_calendario.html#a2aa60aa6d3c27f696018cc09d2748ea5">Calendario::Calendario</a></div><div class="ttdeci">Calendario()</div><div class="ttdoc">Costruttore.</div><div class="ttdef"><b>Definition</b> calendario.cpp:15</div></div>
+<div class="ttc" id="aclass_calendario_html_a3684b956b7e8b8e8b25cdcc1c9664129"><div class="ttname"><a href="class_calendario.html#a3684b956b7e8b8e8b25cdcc1c9664129">Calendario::cancellaPrenotazione</a></div><div class="ttdeci">void cancellaPrenotazione(const long &amp;id1)</div><div class="ttdef"><b>Definition</b> calendario.cpp:145</div></div>
+<div class="ttc" id="aclass_calendario_html_a6b3b4f25d99d0f3e62e4e203a4ceee90"><div class="ttname"><a href="class_calendario.html#a6b3b4f25d99d0f3e62e4e203a4ceee90">Calendario::outputFile</a></div><div class="ttdeci">void outputFile(ofstream &amp;fout)</div><div class="ttdef"><b>Definition</b> calendario.cpp:262</div></div>
+<div class="ttc" id="aclass_calendario_html_a73c1899fe4020cec7b7a43d97635d406"><div class="ttname"><a href="class_calendario.html#a73c1899fe4020cec7b7a43d97635d406">Calendario::inputTastiera</a></div><div class="ttdeci">void inputTastiera(int n)</div><div class="ttdef"><b>Definition</b> calendario.cpp:233</div></div>
+<div class="ttc" id="aclass_calendario_html_a7506173ab867ad17383559c3301a95f2"><div class="ttname"><a href="class_calendario.html#a7506173ab867ad17383559c3301a95f2">Calendario::swap</a></div><div class="ttdeci">void swap(Prenotazione &amp;p1, Prenotazione &amp;p2)</div><div class="ttdoc">Funzione ausiliaria di scambio.</div><div class="ttdef"><b>Definition</b> calendario.cpp:295</div></div>
+<div class="ttc" id="aclass_calendario_html_a79b9444eece40dd2eec121590e12b92e"><div class="ttname"><a href="class_calendario.html#a79b9444eece40dd2eec121590e12b92e">Calendario::cercaPrenotazione</a></div><div class="ttdeci">int cercaPrenotazione(const long &amp;id1)</div><div class="ttdef"><b>Definition</b> calendario.cpp:93</div></div>
+<div class="ttc" id="aclass_calendario_html_a8803bbbf6559eaa6b242bf744146ae0e"><div class="ttname"><a href="class_calendario.html#a8803bbbf6559eaa6b242bf744146ae0e">Calendario::setPrenotazione</a></div><div class="ttdeci">void setPrenotazione(const long &amp;id1)</div><div class="ttdef"><b>Definition</b> calendario.cpp:107</div></div>
+<div class="ttc" id="aclass_calendario_html_aa1de8b4fdc10da4cc4b8d225873160ba"><div class="ttname"><a href="class_calendario.html#aa1de8b4fdc10da4cc4b8d225873160ba">Calendario::elim</a></div><div class="ttdeci">void elim(int i)</div><div class="ttdoc">Funzione ausiliaria di eliminazione.</div><div class="ttdef"><b>Definition</b> calendario.cpp:201</div></div>
+<div class="ttc" id="aclass_calendario_html_aa6cb8e23bc4e8ffc4c83c516b1056826"><div class="ttname"><a href="class_calendario.html#aa6cb8e23bc4e8ffc4c83c516b1056826">Calendario::aggiornaCalendario</a></div><div class="ttdeci">void aggiornaCalendario(const Data &amp;giorno)</div><div class="ttdef"><b>Definition</b> calendario.cpp:170</div></div>
+<div class="ttc" id="aclass_calendario_html_aa7b2ba66de7c54f14f56efc559f77a4a"><div class="ttname"><a href="class_calendario.html#aa7b2ba66de7c54f14f56efc559f77a4a">Calendario::inputFile</a></div><div class="ttdeci">void inputFile(ifstream &amp;fin)</div><div class="ttdef"><b>Definition</b> calendario.cpp:249</div></div>
+<div class="ttc" id="aclass_calendario_html_aaa7feb31c1e6a0377e4c06a373dd0004"><div class="ttname"><a href="class_calendario.html#aaa7feb31c1e6a0377e4c06a373dd0004">Calendario::dataLibera</a></div><div class="ttdeci">bool dataLibera(const Camera room, const Data &amp;d1, const Data &amp;d2)</div><div class="ttdef"><b>Definition</b> calendario.cpp:185</div></div>
+<div class="ttc" id="aclass_calendario_html_ab5019aafc2dd7bbc6b83425362865c61"><div class="ttname"><a href="class_calendario.html#ab5019aafc2dd7bbc6b83425362865c61">Calendario::ordinaCalendario</a></div><div class="ttdeci">void ordinaCalendario(bool(*ord)(Prenotazione p1, Prenotazione p2))</div><div class="ttdef"><b>Definition</b> calendario.cpp:274</div></div>
+<div class="ttc" id="aclass_calendario_html_ae18ac4014321c77c80faf006b325af7f"><div class="ttname"><a href="class_calendario.html#ae18ac4014321c77c80faf006b325af7f">Calendario::showCalendario</a></div><div class="ttdeci">void showCalendario() const</div><div class="ttdef"><b>Definition</b> calendario.cpp:159</div></div>
+<div class="ttc" id="aclass_calendario_html_ae1d295d116bed29cf3a9eb8e5b8e2a52"><div class="ttname"><a href="class_calendario.html#ae1d295d116bed29cf3a9eb8e5b8e2a52">Calendario::showGiorno</a></div><div class="ttdeci">void showGiorno(const Data &amp;giorno) const</div><div class="ttdef"><b>Definition</b> calendario.cpp:214</div></div>
+<div class="ttc" id="aclass_calendario_html_ae4f5278c417c7c74e6fb80676620a77a"><div class="ttname"><a href="class_calendario.html#ae4f5278c417c7c74e6fb80676620a77a">Calendario::nuovaPrenotazione</a></div><div class="ttdeci">void nuovaPrenotazione(const Cliente &amp;c1, Camera room, const Data &amp;d1, const Data &amp;d2, int ospiti)</div><div class="ttdoc">Effettua la prenotazione.</div><div class="ttdef"><b>Definition</b> calendario.cpp:40</div></div>
+<div class="ttc" id="aclass_prenotazione_html"><div class="ttname"><a href="class_prenotazione.html">Prenotazione</a></div><div class="ttdoc">Rappresenta un'entità generica di una prenotazione.</div><div class="ttdef"><b>Definition</b> prenotazione.h:25</div></div>
+<div class="ttc" id="aconfigurazione_8h_html_adc0591c2c6aa3aa864336ece4978ab62"><div class="ttname"><a href="configurazione_8h.html#adc0591c2c6aa3aa864336ece4978ab62">Camera</a></div><div class="ttdeci">Camera</div><div class="ttdoc">Camere presenti in struttura.</div><div class="ttdef"><b>Definition</b> configurazione.h:22</div></div>
+<div class="ttc" id="aprenotazione_8h_html"><div class="ttname"><a href="prenotazione_8h.html">prenotazione.h</a></div><div class="ttdoc">Dischiarazione della classe Prenotazione.</div></div>
+<div class="ttc" id="astruct_cliente_html"><div class="ttname"><a href="struct_cliente.html">Cliente</a></div><div class="ttdoc">Rappresenta un cliente.</div><div class="ttdef"><b>Definition</b> cliente.h:21</div></div>
+<div class="ttc" id="astruct_data_html"><div class="ttname"><a href="struct_data.html">Data</a></div><div class="ttdoc">Rappresenta una data.</div><div class="ttdef"><b>Definition</b> data.h:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="calendario_8h.html">calendario.h</a></li>
+    <li class="footer">Generato da <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>
